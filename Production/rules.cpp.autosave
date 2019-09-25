@@ -1,0 +1,21 @@
+#include "rules.h"
+
+Rules::Rules()
+{
+    
+}
+
+void Rules::addRule(const std::string rule)
+{
+    rules.push_back(rule);
+}
+
+std::string Rules::getRule(int number) const
+{
+    rules[]
+}
+
+int Rules::getCountRules() const
+{
+    return rules.size();
+}
