@@ -292,7 +292,7 @@
      <x>0</x>
      <y>0</y>
      <width>485</width>
-     <height>21</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>
@@ -305,6 +305,11 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionEditRules">
+   <property name="text">
+    <string>EditRules</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2019-09-25T06:12:55
+# Project created by QtCreator 2018-12-05T23:03:17
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Production
+TARGET = expertSystem
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -22,22 +22,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
-    diseases.cpp \
-    patients.cpp \
-    forwardproduction.cpp \
-    backwardproduction.cpp
+        mainwindow.cpp
 
 HEADERS += \
-        mainwindow.h \
-    diseases.h \
-    patients.h \
-    forwardproduction.h \
-    backwardproduction.h
+        mainwindow.h
 
 FORMS += \
         mainwindow.ui

@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "diseases.h"
+#include "editrules.h"
 #include "patients.h"
 
 namespace Ui {
@@ -17,12 +18,14 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
+public slots:
     void on_buttonSolutionForward_clicked();
 
     void on_buttonSolutionBackward_clicked();
 
     void on_patientComboBox_activated(const QString &arg1);
+
+    void on_actionEditRules_triggered();
 
 private:
     QString QtConvertStr(const std::string str){
@@ -37,6 +40,7 @@ private:
     Ui::MainWindow *ui;
     Diseases diseases;
     Patients patients;
+    QAction* ruleAction;
     Diseases::PatientsCharacters patientCharacters;
 };
 

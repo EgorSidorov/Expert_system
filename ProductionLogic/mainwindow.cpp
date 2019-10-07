@@ -13,6 +13,8 @@ MainWindow::MainWindow(QWidget *parent) :
     LoadThreatments();
     ui->editTemperature->setInputMask("00.0");
     on_patientComboBox_activated(ui->patientComboBox->currentText());
+    ruleAction = ui->menuBar->addAction("Логический вывод");
+    connect(ruleAction,&QAction::triggered,this,&MainWindow::on_actionEditRules_triggered);
 }
 
 MainWindow::~MainWindow()
@@ -92,4 +94,10 @@ void MainWindow::on_patientComboBox_activated(const QString &arg1)
 {
     patientCharacters = patients.getPatientCharacters(arg1.toUtf8().constData());
     setPatientCharactestToUI(patientCharacters);
+}
+
+void MainWindow::on_actionEditRules_triggered()
+{
+    EditRules editRules;
+    editRules.exec();
 }

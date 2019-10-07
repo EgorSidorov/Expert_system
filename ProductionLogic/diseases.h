@@ -3,6 +3,8 @@
 
 #include <map>
 #include <list>
+#include <fstream>
+
 
 class Diseases
 {
@@ -15,6 +17,7 @@ public:
     std::string getTreatment(const std::string disease) const;
     int getCount() const;
     void removeDisease(const int number);
+
 
     struct PatientsCharacters{
         PatientsCharacters(){};
