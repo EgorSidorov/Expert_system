@@ -8,4 +8,4 @@
 [![N|Solid](https://github.com/EgorSidorov/Expert_system/blob/master/images/logic.png)
 
 #Универсальная экспертная система на основе правил Мамдани по 3 категориям(плохо, нормально, хорошо)
-[![N|Solid](https://github.com/EgorSidorov/Expert_system/blob/master/images/mamdani.png)
+[![N|Solid](https://github.com/EgorSidorov/Expert_system/blob/master/images/mamdani.jpg)
